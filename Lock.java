@@ -15,13 +15,15 @@ public class Lock {
     }
 
 
-    public int getRandomLock() {
+    public StringBuilder getRandomLock() {
         final Random random = new Random();
         this.a = random.nextInt(10);
         this.b = random.nextInt(10);
         this.c = random.nextInt(10);
-        return a; // jak zwrocic 3 cyfrowe haslo ? 
+        StringBuilder sb = new StringBuilder().append(this.a).append(this.b).append(this.c);
+        return sb;
     }
+
 
     public int changeA () {
         if (this.a == 9) {
