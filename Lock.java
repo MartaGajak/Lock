@@ -3,7 +3,6 @@ package pl.sdacademy.powtorka.zadania.klasy.lock;
 import java.util.Random;
 
 public class Lock {
-
     private int a;
     private int b;
     private int c;
@@ -13,7 +12,6 @@ public class Lock {
         this.b = b;
         this.c = c;
     }
-
 
     public StringBuilder getRandomLock() {
         final Random random = new Random();
